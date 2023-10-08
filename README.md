@@ -1,0 +1,2 @@
+# flat-selection
+flattens selections
