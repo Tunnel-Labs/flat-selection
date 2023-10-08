@@ -47,9 +47,9 @@ const nestedCommentThread = {
 };
 
 const flatCommentThread = flatten(nestedCommentThread, 'CommentThread', {
-  author: (user) => flatten(user, 'User', {}),
+  author: (user) => flatten(user, 'User'),
   comments: (comment) => flatten(comment, 'Comment', {
-    files: (file) => flatten(file, 'File', {})
+    files: (file) => flatten(file, 'File')
   })
 })
 
